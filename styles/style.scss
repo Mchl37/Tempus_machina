@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+$color-background: #F8F5F3;
+$color-primary: #373636;
+
+$font-serif: 'Alice', serif;
+$font-sans: 'Montserrat', sans-serif;
+
+body {
+  background: $color-background;
+  font-family: $font-sans;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+
+  h1 {
+    font-family: $font-serif;
+    font-size: 2.5rem;
+    color: $color-primary;
+    text-align: center;
+  }
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  width: 50%;
+
+  #map {
+    height: 800px;
+    width: 100%;
+  }
+}
